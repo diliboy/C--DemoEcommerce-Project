@@ -1,0 +1,77 @@
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio working folder
+.vs/
+.vscode/
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+*.log
+
+# Generated code & packages
+*.g.cs
+*.g.i.cs
+*.dll
+*.exe
+*.pdb
+*.cache
+*.dbmdl
+*.db
+*.bak
+*.zip
+*.tar.gz
+*.tgz
+*.tar
+
+# ASP.NET
+wwwroot/lib/
+node_modules/
+dist/
+libman.json
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+*.nuspec
+
+# Entity Framework
+Migrations/
+
+# Rider
+.idea/
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Others
+*.swp
+*.DS_Store
+Thumbs.db
+
+# Secrets (optional)
+secrets.json
+appsettings.Development.json
+appsettings.Local.json
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# MacOS
+.DS_Store
