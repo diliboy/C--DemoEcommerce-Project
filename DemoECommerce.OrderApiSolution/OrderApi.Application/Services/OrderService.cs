@@ -33,7 +33,7 @@ namespace OrderApi.Application.Services
         {
             //call product api using httpclient
             //Redirect this call to API gateway since product API is not response to outsiders.
-            var getUser = await httpClient.GetAsync($"/api/Product/{userId}");
+            var getUser = await httpClient.GetAsync($"http://localhost:5000/api/Authentication/{userId}");
             if (!getUser.IsSuccessStatusCode)
                 return null!;
 
