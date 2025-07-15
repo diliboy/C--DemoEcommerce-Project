@@ -18,7 +18,15 @@ namespace OrderApi.Application.DependencyInjection
             {
                 options.BaseAddress = new Uri(config["ApiGateway:BaseAddress"]!);
                 options.Timeout = TimeSpan.FromSeconds(10);
+            })
+            .ConfigurePrimaryHttpMessageHandler(() =>
+            {
+                return new HttpClientHandler
+                {
+                    ServerCertificateCustomValidationCallback = (message, cert, chain, sslPolicyErrors) => true
+                };
             });
+            //above is only for dev since calling https
 
             //create retry strategy
             var retryStrategy = new RetryStrategyOptions()
